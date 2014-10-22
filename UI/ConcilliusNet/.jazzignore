@@ -1,0 +1,47 @@
+### Jazz Ignore 0
+# O valor padrão para core.ignore.recursive é *.class
+#  Alterar esse valor altera o comportamento de registro de entrada de todo o projeto. 
+#
+# O valor padrão para core.ignore é bin
+#  Alterar esse valor altera o comportamento de registro de entrada do diretório local. 
+#
+# Os arquivos e pastas ignorados não serão consolidados, mas podem ser modificados durante a 
+# aceitação ou atualização.
+# As propriedades para ignorar devem conter uma lista separada por espaços de padrões de nomes de arquivos.
+# Cada padrão faz distinção dentre maiúsculas e minúsculas e está entre chaves ('{' e '}'). 
+# "*" corresponde a zero ou mais caracteres e "?" corresponde a caracteres únicos. 
+#
+#   por exemplo: {*.sh} {\.*}    ignora scripts de shell e arquivos ocultos
+
+# NOTA: modificar arquivos para ignorar não irá alterar o status ignorar de recursos 
+# derivados.
+
+core.ignore.recursive= \
+	{#*} \
+	{*$} \
+	{*.BAK} \
+	{*.Z} \
+	{*.bak} \
+	{*.elc} \
+	{*.ln} \
+	{*.log} \
+	{*.o} \
+	{*.obj} \
+	{*.olb} \
+	{*.old} \
+	{*.orig} \
+	{*.rej} \
+	{*~} \
+	{,*} \
+	{.#*} \
+	{.DS_Store} \
+	{.del-*} \
+	{.make.state} \
+	{.nse_depinfo} \
+	{CVS.adm} \
+	{RCS} \
+	{RCSLOG} \
+	{SCCS} \
+	{_$*} 
+
+core.ignore= 

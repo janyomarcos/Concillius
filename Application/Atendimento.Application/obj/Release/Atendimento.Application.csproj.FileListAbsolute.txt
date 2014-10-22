@@ -1,0 +1,9 @@
+C:\FonteDesenvolvimentoNet\Concillius\Application\Atendimento.Application\bin\Release\Atendimento.Application.dll
+C:\FonteDesenvolvimentoNet\Concillius\Application\Atendimento.Application\bin\Release\Atendimento.Application.pdb
+C:\FonteDesenvolvimentoNet\Concillius\Application\Atendimento.Application\obj\Release\Atendimento.Application.dll
+C:\FonteDesenvolvimentoNet\Concillius\Application\Atendimento.Application\obj\Release\Atendimento.Application.pdb
+D:\Atividades_Extra\Concillius\Application\Atendimento.Application\bin\Release\Atendimento.Application.dll
+D:\Atividades_Extra\Concillius\Application\Atendimento.Application\bin\Release\Atendimento.Application.pdb
+D:\Atividades_Extra\Concillius\Application\Atendimento.Application\obj\Release\Atendimento.Application.csprojResolveAssemblyReference.cache
+D:\Atividades_Extra\Concillius\Application\Atendimento.Application\obj\Release\Atendimento.Application.dll
+D:\Atividades_Extra\Concillius\Application\Atendimento.Application\obj\Release\Atendimento.Application.pdb

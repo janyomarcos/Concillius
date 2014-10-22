@@ -1,0 +1,40 @@
+@model Concillius.Models.LoginModel
+
+@{
+    ViewBag.Title = "Autenticação";
+}
+
+<div align="center">
+<hgroup class="title">
+    <h2>@ViewBag.Title</h2>
+</hgroup>
+</div>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+@using (Html.BeginForm((string)ViewBag.FormAction, "Account")) {
+    @Html.ValidationSummary(true, "Dados incorretos. Por favor informe usuário e senha novamente.")
+
+    <fieldset>
+
+    <div align="center">        
+                @Html.LabelFor(m => m.Usuario)
+                @Html.TextBoxFor(m => m.Usuario, new {style="width:100px;" })<br />
+                @Html.ValidationMessageFor(m => m.Usuario)
+
+
+                @Html.LabelFor(m => m.Senha)
+                @Html.PasswordFor(m => m.Senha, new {style="width:100px;" })<br />
+                @Html.ValidationMessageFor(m => m.Senha)
+        
+        <input type="submit" value="Entrar" class="btAzul updateButton btn btn-small btn-primary" />
+    </div>
+    </fieldset>
+
+
+}
+
+<script type="text/javascript">
+    document.getElementById("Usuario").focus();
+</script>
+

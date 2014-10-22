@@ -1,0 +1,10 @@
+C:\FonteDesenvolvimentoNet\Concillius\Domain\Concillius.Domain\bin\Release\Concillius.Domain.dll
+C:\FonteDesenvolvimentoNet\Concillius\Domain\Concillius.Domain\bin\Release\Concillius.Domain.pdb
+C:\FonteDesenvolvimentoNet\Concillius\Domain\Concillius.Domain\obj\Release\Concillius.Domain.dll
+C:\FonteDesenvolvimentoNet\Concillius\Domain\Concillius.Domain\obj\Release\Concillius.Domain.pdb
+D:\Atividades_Extra\Concillius\Domain\Concillius.Domain\bin\Release\Concillius.Domain.dll
+D:\Atividades_Extra\Concillius\Domain\Concillius.Domain\bin\Release\Concillius.Domain.pdb
+D:\Atividades_Extra\Concillius\Domain\Concillius.Domain\obj\Release\Concillius.Domain.csprojResolveAssemblyReference.cache
+D:\Atividades_Extra\Concillius\Domain\Concillius.Domain\obj\Release\Concillius.Domain.dll
+D:\Atividades_Extra\Concillius\Domain\Concillius.Domain\obj\Release\Concillius.Domain.pdb
+C:\FonteDesenvolvimentoNet\Concillius\Domain\Concillius.Domain\obj\Release\Concillius.Domain.csprojResolveAssemblyReference.cache

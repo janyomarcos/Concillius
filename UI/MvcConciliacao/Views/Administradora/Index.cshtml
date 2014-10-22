@@ -1,0 +1,189 @@
+﻿@model IEnumerable<Concillius.Domain.Cadastros.AdministradoraCartao>
+
+@{
+    ViewBag.Title = "Buscar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Criar", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.NomeCartao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IdEmpresa)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TipoCartao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NumeroMaximoParcelas)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CodigoControle)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CodigoLayout)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NomePasta)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CodigoUsuarioResponsavel)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DiaMesCredito)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SomarFeriado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ImportarAntecipacao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CodigoCliente)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IdRegraGerarVencimento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ImportarArquivoVencimentoFinanceiroJuntos)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Situacao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DuplicarCarga)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ImportaAjusteFinanceiro)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ImportaAjusteVenda)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Gerar)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TipoUniao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RazaoSocial)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CNPJ)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CodigoUsuarioInclusao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DataInclusao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Versao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CodigoUsuarioAlteracao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DataAlteracao)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.NomeCartao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IdEmpresa)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TipoCartao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NumeroMaximoParcelas)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CodigoControle)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CodigoLayout)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NomePasta)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CodigoUsuarioResponsavel)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DiaMesCredito)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SomarFeriado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ImportarAntecipacao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CodigoCliente)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IdRegraGerarVencimento)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ImportarArquivoVencimentoFinanceiroJuntos)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Situacao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DuplicarCarga)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ImportaAjusteFinanceiro)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ImportaAjusteVenda)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Gerar)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TipoUniao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RazaoSocial)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CNPJ)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CodigoUsuarioInclusao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DataInclusao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Versao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CodigoUsuarioAlteracao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DataAlteracao)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id=item.Id, idEmpresa=item.IdEmpresa }) |
+            @Html.ActionLink("Excluir", "Delete", new { id=item.Id, idEmpresa=item.IdEmpresa })
+        </td>
+    </tr>
+}
+
+</table>

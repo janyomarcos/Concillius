@@ -1,0 +1,141 @@
+﻿@model Concillius.Domain.Cadastros.ContaBancaria
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 style="font-family: Verdana; color : green;" >Criar Conta Bancária</h2>
+
+@using (Html.BeginForm("Create", "ContaBancaria", FormMethod.Post, new { @class = "form-horizontal" }))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend><b>Dados</b></legend>
+        
+        
+        <div class="editor-field">
+            <table>
+
+                <td style="padding: 4px">
+                    <div class="editor-label">
+                        @Html.LabelFor(model => model.CodigoBanco)
+                    </div>
+                </td>
+                <td>
+                    <div class="editor-field">
+                        @Html.EditorFor(model => model.CodigoBanco)
+                        @Html.ValidationMessageFor(model => model.CodigoBanco)
+                    </div>
+                </td>
+                <td style="padding: 10px"></td>
+                <td style="padding: 4px">
+                    <div class="editor-label">
+                        @Html.LabelFor(model => model.CodigoAgencia)
+                    </div>
+                </td>
+                <td>
+                    <div class="editor-label">
+                        @Html.EditorFor(model => model.CodigoAgencia)
+                        @Html.ValidationMessageFor(model => model.CodigoAgencia)
+                    </div>
+                </td>
+                <td style="padding: 10px"></td>
+                <td style="padding: 4px">
+                    <div class="editor-label">
+                        @Html.LabelFor(model => model.CodigoEmpresa)
+                    </div>
+                </td>
+                <td>
+                    <div class="editor-label">
+                        @Html.EditorFor(model => model.CodigoEmpresa)
+                        @Html.ValidationMessageFor(model => model.CodigoEmpresa)
+                    </div>
+                </td>
+                <td style="padding: 10px"></td>
+                <td style="padding: 4px">
+                    <div class="editor-label">
+                        @Html.LabelFor(model => model.CodigoConta)
+                    </div>
+                </td>
+                <td>
+                    <div class="editor-label">
+                        @Html.EditorFor(model => model.CodigoConta)
+                        @Html.ValidationMessageFor(model => model.CodigoConta)
+                    </div>
+                </td>
+            </table>
+        </div>
+
+       <br />
+
+        <div class="editor-field">
+            <table>
+
+                <td style="padding: 4px">
+                    <div class="editor-label">
+                        @Html.LabelFor(model => model.Descricao)
+                    </div>
+                </td>
+                <td>
+                    <div class="editor-field">
+                        @Html.TextAreaFor(model => model.Descricao)
+                        @Html.ValidationMessageFor(model => model.Descricao)
+                    </div>
+                </td>
+                <td style="padding: 10px"></td>
+                <td style="padding: 4px">
+                    <div class="editor-label">
+                        @Html.LabelFor(model => model.ContaWeb)
+                    </div>
+                </td>
+                <td>
+                    <div class="editor-label">
+                        @Html.EditorFor(model => model.ContaWeb)
+                        @Html.ValidationMessageFor(model => model.ContaWeb)
+                    </div>
+                </td>
+                <td style="padding: 10px"></td>
+                <td style="padding: 4px">
+                    <div class="editor-label">
+                        @Html.LabelFor(model => model.ContaContabil)
+                    </div>
+                </td>
+                <td>
+                    <div class="editor-label">
+                        @Html.EditorFor(model => model.ContaContabil)
+                        @Html.ValidationMessageFor(model => model.ContaContabil)
+                    </div>
+                </td>
+                <td style="padding: 10px"></td>
+                <td style="padding: 4px">
+                    <div class="editor-label">
+                        @Html.LabelFor(model => model.Situacao)
+                    </div>
+                </td>
+                <td>
+                    <div class="editor-label">
+                        @Html.EditorFor(model => model.Situacao)
+                        @Html.ValidationMessageFor(model => model.Situacao)
+                    </div>
+                </td>
+            </table>
+        </div>
+
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <p style="text-align: right">
+            <input type="submit" value="Salvar" class="btn btn-success"/>    @Html.ActionLink("Voltar", "Index", "ContaBancaria", null, new { @class = "btn btn-success" , @style="color:white; text-decoration:none;"})
+        </p>
+
+    </fieldset>
+}
+
+
+
+

@@ -1,0 +1,23 @@
+﻿@model Concillius.Corporativo.Apresentacao.Modelo.Componente.ButtonModel
+@{
+    string attr = "";
+
+    foreach (var item in Model.Attributes)
+    {
+        attr = String.Concat(attr, " ", item.Key, "=", item.Value);
+    }
+
+    bool layoutAtivo = Model.Attributes.Keys.Contains("data-layout-enabled");
+}
+
+
+    @if (layoutAtivo)
+    {
+        <span class="cosmos-button">    
+            <a href="@(Model.Url)" class="@(Model.CssClass)"  title="@(Model.Value)" data-update-button="[]" @(attr)>@Model.Value</a>
+        </span>
+    }
+    else
+    {
+        <a href="@(Model.Url)" class="@(Model.CssClass)" title="@(Model.Value)" data-update-button="[]" @(attr)>@Model.Value</a> 
+    }

@@ -1,0 +1,209 @@
+﻿@model Concillius.Domain.Cadastros.AdministradoraCartao
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Excluir</h2>
+
+<h3>Deseja realmente excluir?</h3>
+<fieldset>
+    <legend>AdministradoraCartao</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.NomeCartao)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.NomeCartao)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.IdEmpresa)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.IdEmpresa)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.TipoCartao)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TipoCartao)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.NumeroMaximoParcelas)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.NumeroMaximoParcelas)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CodigoControle)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CodigoControle)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CodigoLayout)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CodigoLayout)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.NomePasta)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.NomePasta)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CodigoUsuarioResponsavel)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CodigoUsuarioResponsavel)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.DiaMesCredito)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DiaMesCredito)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.SomarFeriado)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.SomarFeriado)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ImportarAntecipacao)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ImportarAntecipacao)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CodigoCliente)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CodigoCliente)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.IdRegraGerarVencimento)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.IdRegraGerarVencimento)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ImportarArquivoVencimentoFinanceiroJuntos)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ImportarArquivoVencimentoFinanceiroJuntos)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Situacao)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Situacao)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.DuplicarCarga)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DuplicarCarga)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ImportaAjusteFinanceiro)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ImportaAjusteFinanceiro)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ImportaAjusteVenda)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ImportaAjusteVenda)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Gerar)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Gerar)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.TipoUniao)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TipoUniao)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.RazaoSocial)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.RazaoSocial)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CNPJ)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CNPJ)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CodigoUsuarioInclusao)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CodigoUsuarioInclusao)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.DataInclusao)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DataInclusao)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Versao)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Versao)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CodigoUsuarioAlteracao)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CodigoUsuarioAlteracao)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.DataAlteracao)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DataAlteracao)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}

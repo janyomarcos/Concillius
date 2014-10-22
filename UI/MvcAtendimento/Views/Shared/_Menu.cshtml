@@ -1,0 +1,16 @@
+﻿
+<div class="navbar">
+    <div class="navbar-inner">
+        <ul class="nav" role="navigation">
+            <li class="dropdown">
+                <a id="servico" role="button" data-toggle="dropdown" class="dropdown-toggle">Serviços
+                    <div class="caret"></div>
+                </a> 
+                <ul id="servico" class="dropdown-menu" role="menu" aria-labelledby="drop1">
+                    <li>@Html.ActionLink("Solicitar", "Index", "SolicitarServico", null, null)</li>
+                    <li>@Html.ActionLink("Cancelar", "Index", "CancelarServico", null, null)</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>

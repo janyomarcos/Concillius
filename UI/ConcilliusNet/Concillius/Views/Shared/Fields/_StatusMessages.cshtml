@@ -1,0 +1,56 @@
+﻿@using Concillius.Corporativo.Apresentacao.Mensagem;
+@model List<Concillius.Corporativo.Apresentacao.Mensagem.SituacaoMensagem>
+@{
+    bool hasError = Model.Any(x => x.Tipo == TipoMensagem.Erro);
+    bool hasInformation = Model.Any(x => x.Tipo == TipoMensagem.Informacao);
+    bool hasSuccess = Model.Any(x => x.Tipo == TipoMensagem.Sucesso);
+    bool hasWarning = Model.Any(x => x.Tipo == TipoMensagem.Advertencia);
+    }
+
+<div id="validations">
+    <div id="validations-container">
+        @if (hasWarning)
+        { 
+            <div class="notification attention png_bg">
+                <span class="closeMessage"></span>
+                @EscreverMensagens(Model.Where(x => x.Tipo == TipoMensagem.Advertencia))
+            </div>
+        }
+
+        @if (hasInformation)
+        { 
+            <div class="notification information png_bg">
+                <span class="closeMessage"></span>
+                @EscreverMensagens(Model.Where(x => x.Tipo == TipoMensagem.Informacao))
+            </div>
+        }
+
+        @if (hasSuccess)
+        { 
+            <div class="notification success png_bg">
+                <span class="closeMessage"></span>
+                @EscreverMensagens(Model.Where(x => x.Tipo == TipoMensagem.Sucesso))
+            </div>
+        }
+
+        @if (hasError)
+        { 
+            <div class="notification error png_bg">
+                <span class="closeMessage"></span>
+                @EscreverMensagens(Model.Where(x => x.Tipo == TipoMensagem.Erro))
+            </div>
+        }
+    </div>
+</div>
+
+@helper EscreverMensagens(IEnumerable<SituacaoMensagem> items)
+{
+    <ul>
+    @foreach (var item in items)
+    {
+        <li>
+            @item.Mensagem
+        </li>
+    }
+    </ul>
+}

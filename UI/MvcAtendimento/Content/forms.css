@@ -1,0 +1,273 @@
+label 
+{
+    color: #036;
+    margin-bottom: 3px;
+    display: block;
+    }
+
+fieldset 
+{
+    border: solid 1px #C3D2DE;
+    padding: 15px;
+	margin: 5px 0 15px 0;
+}
+
+/*
+legend 
+{
+    color: #036;
+    font-weight: normal;
+    font-size: 13px;
+    cursor: pointer;
+    text-align:left;
+}
+*/
+
+fieldset li 
+{
+	padding: 3px;
+    }
+
+.texto, textarea 
+{
+    border: 1px solid #7F9DB9;
+    border-bottom-color: #4D6C8A;
+    border-right-color: #4D6C8A;
+    color: #333;
+    font-size: 11px;
+    padding: 3px 0px 0px 3px;
+	margin:0px;
+	height: 20px;
+    }
+
+select {
+    border: solid 1px #7F9DB9;
+    color: #333;
+    font-size: 11px;
+	height: 25px;
+    padding: 3px;
+    }
+
+.campo, .checkboxlist
+{
+	padding: 0 10px 0 0;
+	margin: 3px 0 3px 0;
+	float:left;
+	}
+.checkboxlist {
+    *min-width:430px; /* IE7 */
+	}
+.checkboxlist .campo{
+	*float:none; /* IE7 */
+	}
+.checkboxlist .campo label {
+    display:block;
+    float:right;
+    margin:2px 0 0 0;
+    *margin:3px 0 0 0; /* IE7 */
+     margin:3px 0 0 0 \9; /* IE9 */
+    cursor:pointer;
+    }
+    .checkboxlist .campo label:hover {
+        text-decoration:underline;
+        }
+.checkboxlist .campo input {
+    float:right;
+    }
+
+.campo label 
+{
+	position:relative;
+	display:block;
+	text-align:left;
+    }
+
+
+
+/* --------------------- Botões -------------------- */
+
+.botoes
+{
+    margin-top: 15px;
+    padding: 2px;
+    clear: both;
+    /*text-align: right;
+    background:#EBF0F1;*/
+    border:1px solid #DCE4E7;
+    height:28px;
+    *height:32px;
+}
+
+.botao {
+	margin-top: 16px;
+	margin-top: 14px;/*IE9*/
+	padding: 0 5px 0 0;
+	/*float:right;*/
+	float: right;
+	}
+
+.botoes .botao
+{
+    margin:0;
+    }
+	
+.botoes div.left
+{
+    float: right;
+}
+
+.acoes .botoes {
+    margin-top: 0;
+    padding: 0;
+    background:none;
+    border:none;
+    }
+
+.acoes .botoes .botao {
+    margin: 3px 0;
+    margin: 2px \9;/*IE9*/
+    }
+    
+table.grid .acoes .botoes .botao a {
+    margin: 0;
+    }
+
+    table.grid .acoes .botoes .botao a span {
+        border: 1px solid #C5E9FC;
+        }
+
+/* ------------------- Fim Botoes ------------------ */
+
+	
+/* -------------------- forms Bilhete -------------------- */
+
+.imgBilhete {
+    width:210px; 
+    min-height:220px; 
+    border: 1px solid #C3D2DE; 
+    margin-right: 15px; 
+    padding: 10px; 
+    float: left;
+    position:relative;
+    }
+.caixaOperadora {
+    float: left; 
+    border:1px solid #C3D2DE; 
+    padding:10px 0 10px 10px; 
+    min-height:220px; 
+    margin-right:10px;
+    }
+    .caixaOperadora #Value_Bilhete_Nome 
+    {
+        width:250px;
+        }
+    
+.nomePoolBilhete {
+    float: left; 
+    border:1px solid #C3D2DE; 
+    padding:10px; 
+    min-height:220px;
+    }
+	
+	
+#imagem-bilhete .botao {
+    float:none;
+    margin-top:10px;
+    padding:0 0 0 57px;
+    position:absolute;
+    bottom:10px;
+    }
+#imagem-bilhete {
+    text-align:center;
+    }
+
+
+
+/* -------------- Mensagens -------------- */
+.attention {
+    background: url("../images/exclamation.png") no-repeat #FFFBCC;
+    border: 1px solid #E6DB55;
+    color: #666452;
+}
+.information {
+    background: url("../images/information.png") no-repeat #DBE3FF;
+    border: 1px solid #A2B4EE;
+    color: #585B66;
+}
+
+.success {
+    background: url("../images/tick_circle.png") no-repeat #D5FFCE;
+    border: 1px solid #9ADF8F;
+    color: #556652;
+}
+
+.error {
+    background: url("../images/cross_circle.png") no-repeat #FFCECE;
+    border: 1px solid #DF8F8F;
+    color: #665252;
+}
+
+.notification {
+    background-position: 8px 6px !important;
+    background-repeat: no-repeat !important;
+    border: ;
+    font-size: 13px;
+    margin: 0 0 15px;
+    padding: 0;
+    position: relative;
+    width: 99.8%;
+    
+    border-radius: 6px 6px 6px 6px;
+}
+    .notification .closeMessage {
+        color: #990000;
+        font-size: 9px;
+        position: absolute;
+        right: 8px;
+        top: 12px;
+        height:9px;
+        width:9px;
+        background: url("../images/cross_grey_small.png") no-repeat;
+        cursor: pointer;
+    }
+    .notification ul li {
+        display: block;
+        font-style: normal;
+        line-height: 1.5em;
+        margin:0;
+        padding: 2px 20px 0px 25px;
+    }
+    
+
+
+/* -------------- Loading -------------- */
+.loading 
+{
+	width:16px;
+	height:11px;
+	display:block;
+	position:absolute;
+	top:4px;
+	overflow:hidden;
+	text-indent:-1000px;
+	right: -20px;
+	background:url(../Images/ajax-loader.gif) no-repeat;
+	}
+
+.loadingEstrutura 
+{
+    top: 180px;
+    display:none; 
+    position: fixed; 
+    z-index: 10000; 
+    margin:-3% 40%; 
+    width: 100px; 
+    background:#fff; 
+    border:1px solid #333; 
+    padding:10px;
+}
+
+.direita
+{
+    text-align: right;
+    }

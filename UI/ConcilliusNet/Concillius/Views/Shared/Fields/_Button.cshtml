@@ -1,0 +1,35 @@
+﻿@model Concillius.Corporativo.Apresentacao.Modelo.Componente.ButtonModel
+@{
+    string attr = "";
+
+    foreach (var item in Model.Attributes)
+    {
+        attr = String.Concat(attr, " ", item.Key, "=", item.Value.ToString().Replace(" ", "_"));
+    }
+
+    var dataUpdateButton = new System.Text.StringBuilder();
+
+    dataUpdateButton.Append("{ 'url': '");
+    dataUpdateButton.Append(Model.Url);
+    dataUpdateButton.Append("', 'updateId': '");
+    dataUpdateButton.Append(Model.UpdateId);
+    dataUpdateButton.Append("' }");
+
+    string type = Model.Type.ToString().ToLower();
+    string cssClass = Model.CssClass;
+    string updateData = dataUpdateButton.ToString();
+
+    bool layoutAtivo = Model.Attributes.Keys.Contains("data-layout-enabled");
+}
+
+
+    @if (layoutAtivo)
+    {
+        <span class="cosmos-button">
+            <button type="@(type)" id="@Model.Value" class="@(cssClass)"  title="@(Model.Value)" data-update-button="[@(updateData)]" @(attr)>@Model.Value</button>
+        </span>
+    }
+    else
+    { 
+        <button type="@(type)" class="@(cssClass)" data-update-button="[@(updateData)]" @(attr)>@Model.Value</button>
+    }

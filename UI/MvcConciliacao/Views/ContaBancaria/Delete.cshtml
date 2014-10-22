@@ -1,0 +1,111 @@
+﻿@model Concillius.Domain.Cadastros.ContaBancaria
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>ContaBancaria</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CodigoBanco)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CodigoBanco)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CodigoAgencia)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CodigoAgencia)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CodigoEmpresa)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CodigoEmpresa)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CodigoConta)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CodigoConta)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Descricao)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Descricao)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ContaWeb)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ContaWeb)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ContaContabil)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ContaContabil)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Situacao)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Situacao)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CodigoUsuarioInclusao)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CodigoUsuarioInclusao)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.DataInclusao)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DataInclusao)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Versao)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Versao)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CodigoUsuarioAlteracao)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CodigoUsuarioAlteracao)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.DataAlteracao)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DataAlteracao)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}

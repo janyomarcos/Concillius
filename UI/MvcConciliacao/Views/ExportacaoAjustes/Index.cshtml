@@ -1,0 +1,84 @@
+﻿@model MvcConciliacao.Models.ExportacaoAjusteViewModel
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+    @using (Html.BeginForm("Monitoramento", "Monitoramento", FormMethod.Get))
+    {
+        @Html.ValidationSummary(true) 
+    
+        <fieldset>
+            <legend>Filtros</legend>
+            <div style="padding-top:10px">
+                <div class="editor-label" style="float:left; margin-left:30px">
+                    @Html.Label("Data Ajuste Inicial: ")
+                    @Html.EditorFor(model=>model.DataInicial)
+                </div>
+                <div style="margin-top:20px; margin-left:350px;">
+                 <input type="submit" class="btn btn-primary" value="Buscar"/>
+                </div>
+            </div>
+         </fieldset>
+    }
+
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.DataInicial)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DataFinal)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Origem)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Contabiliza)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CodigoAdministradora)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CodigoFilial)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Tipo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NumeroCartao)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model.Itens) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.CodigoAdministradora)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DataAjuste)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CodigoFilial)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NumeroCartao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Origem)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tipo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Contabiliza)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.QuantidadeParcelas)
+        </td>
+    </tr>
+}
+
+</table>

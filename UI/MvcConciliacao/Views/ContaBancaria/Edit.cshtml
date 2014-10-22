@@ -1,0 +1,131 @@
+﻿@model Concillius.Domain.Cadastros.ContaBancaria
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>ContaBancaria</legend>
+
+        @Html.HiddenFor(model => model.Id)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.CodigoBanco)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.CodigoBanco)
+            @Html.ValidationMessageFor(model => model.CodigoBanco)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.CodigoAgencia)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.CodigoAgencia)
+            @Html.ValidationMessageFor(model => model.CodigoAgencia)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.CodigoEmpresa)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.CodigoEmpresa)
+            @Html.ValidationMessageFor(model => model.CodigoEmpresa)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.CodigoConta)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.CodigoConta)
+            @Html.ValidationMessageFor(model => model.CodigoConta)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Descricao)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Descricao)
+            @Html.ValidationMessageFor(model => model.Descricao)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ContaWeb)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ContaWeb)
+            @Html.ValidationMessageFor(model => model.ContaWeb)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ContaContabil)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ContaContabil)
+            @Html.ValidationMessageFor(model => model.ContaContabil)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Situacao)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Situacao)
+            @Html.ValidationMessageFor(model => model.Situacao)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.CodigoUsuarioInclusao)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.CodigoUsuarioInclusao)
+            @Html.ValidationMessageFor(model => model.CodigoUsuarioInclusao)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.DataInclusao)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.DataInclusao)
+            @Html.ValidationMessageFor(model => model.DataInclusao)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Versao)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Versao)
+            @Html.ValidationMessageFor(model => model.Versao)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.CodigoUsuarioAlteracao)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.CodigoUsuarioAlteracao)
+            @Html.ValidationMessageFor(model => model.CodigoUsuarioAlteracao)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.DataAlteracao)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.DataAlteracao)
+            @Html.ValidationMessageFor(model => model.DataAlteracao)
+        </div>
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

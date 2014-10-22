@@ -1,0 +1,67 @@
+﻿
+<div class="navbar">
+    <div class="navbar-inner">
+        <ul class="nav" role="navigation">
+            <li class="dropdown">
+                <a id="cadastro" role="button" data-toggle="dropdown" class="dropdown-toggle">Cadastros
+                    <div class="caret"></div>
+                </a> 
+                <ul id="cadastro" class="dropdown-menu" role="menu" aria-labelledby="drop1">
+                    <li>@Html.ActionLink("Administradora de Cartões", "Index", "Administradora", null, null)</li>
+                    <li>@Html.ActionLink("Conta Bancária", "Index", "ContaBancaria", null, null)</li>
+                    <li>@Html.ActionLink("Conta Bancária da Administradora", "Index", "ContaBancariaAdministradora", null, null)</li>
+                    <li>@Html.ActionLink("Filial", "Index", "Filial", null, null)
+                    <li >@Html.ActionLink("Maquineta","Index","Maquineta",null, null)</li>                    
+                    <li>@Html.ActionLink("Parâmetros da Administradora", "Index", "Parametros", null, null)</li>
+                    <li>@Html.ActionLink("Resumo de Atualizações", "Index", "ResumoAtualizacao", null, null)</li>
+                </ul>
+            </li>
+              <li class="dropdown">
+                <a id="consultas" role="button" data-toggle="dropdown" class="dropdown-toggle">
+                    Exportações/Consultas
+                    <div class="caret"></div>
+                </a>
+                <ul id="consultas" class="dropdown-menu" role="menu" >
+                     <li>@Html.ActionLink("Ajustes", "Index", "ExportacaoAjustes", null, null)</li>
+                     <li>@Html.ActionLink("Parametrizadas", "Index", "Parametrizada", null, null)</li>
+                     <li>@Html.ActionLink("Divergências de Vendas", "Index", "DivergenciaVenda", null, null)</li>
+                    <li>@Html.ActionLink("Fechamento Diário", "Index", "FechamentoDiario", null, null)</li>
+                    <li>@Html.ActionLink("Gerenciamento Importações", "Index", "GerenciamentoImportacao", null, null)</li>
+                    <li>@Html.ActionLink("Movimentação Cupons", "Index", "MovimentacaoCupom", null, null)</li>
+                    <li>@Html.ActionLink("Recebimentos", "Index", "Recebimentos", null, null)</li>
+                    <li>@Html.ActionLink("Saldos", "Index", "Saldo", null, null)</li>
+                    <li>@Html.ActionLink("Tarifas", "Index", "Tarifa", null, null)</li>
+                    <li>@Html.ActionLink("Vendas", "Index", "Venda", null, null)</li>
+                </ul>
+
+            </li>
+             <li class="dropdown">
+                <a id="integracao" role="button" data-toggle="dropdown" class="dropdown-toggle">
+                    Integração
+                    <div class="caret"></div>
+                </a>
+                  <ul id="integracao" class="dropdown-menu" role="menu" >
+                      <li>@Html.ActionLink("Importação de Vendas", "Buscar", "ImportacaoVenda", null, null)</li>
+                      <li>@Html.ActionLink("Importação de Extratos Bancários", "Buscar", "ImportacaoExtrato", null, null)</li>
+                      <li>@Html.ActionLink("Exportar Planilha", "Buscar", "ExportarPlanilha", null, null)</li>
+                  </ul>
+            </li>
+            <li class="dropdown">
+                <a id="movimentacao" role="button" data-toggle="dropdown" class="dropdown-toggle">
+                    Movimentação
+                    <div class="caret"></div>
+                </a>
+                  <ul id="movimentacao" class="dropdown-menu" role="menu" >
+                        <li>@Html.ActionLink("Ajustes", "Index", "Ajustes", null, null)</li>
+                        <li>@Html.ActionLink("Antecipação", "Index", "Antecipacao", null, null)</li>
+                        <li>@Html.ActionLink("Cupom Manual", "Index", "CupomManual", null, null)</li>
+                        <li>@Html.ActionLink("Deslocamento de Parcelas", "Index", "DeslocamentoParcela", null, null)</li>
+                        <li>@Html.ActionLink("Recebimento", "Index", "Recebimento", null, null)</li>
+                        <li>@Html.ActionLink("Solicitacão de Ajustes", "Index", "SolicitacaoAjuste", null, null)</li>
+                        <li>@Html.ActionLink("Tarifa", "Index", "Tarifa", null, null)</li>
+                        <li>@Html.ActionLink("Venda", "Index", "Venda", null, null)</li>
+                  </ul>
+            </li>
+        </ul>
+    </div>
+</div>

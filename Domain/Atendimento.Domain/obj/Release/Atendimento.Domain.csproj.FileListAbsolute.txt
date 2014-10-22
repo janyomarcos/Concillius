@@ -1,0 +1,8 @@
+C:\FonteDesenvolvimentoNet\Concillius\Domain\Atendimento.Domain\bin\Release\Atendimento.Domain.dll
+C:\FonteDesenvolvimentoNet\Concillius\Domain\Atendimento.Domain\bin\Release\Atendimento.Domain.pdb
+C:\FonteDesenvolvimentoNet\Concillius\Domain\Atendimento.Domain\obj\Release\Atendimento.Domain.dll
+C:\FonteDesenvolvimentoNet\Concillius\Domain\Atendimento.Domain\obj\Release\Atendimento.Domain.pdb
+D:\Atividades_Extra\Concillius\Domain\Atendimento.Domain\bin\Release\Atendimento.Domain.dll
+D:\Atividades_Extra\Concillius\Domain\Atendimento.Domain\bin\Release\Atendimento.Domain.pdb
+D:\Atividades_Extra\Concillius\Domain\Atendimento.Domain\obj\Release\Atendimento.Domain.dll
+D:\Atividades_Extra\Concillius\Domain\Atendimento.Domain\obj\Release\Atendimento.Domain.pdb

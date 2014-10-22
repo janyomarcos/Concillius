@@ -1,0 +1,27 @@
+﻿@if (Request.IsAuthenticated)
+{
+    <p>
+        <ul>
+            <li>
+                <p class="site-title">
+                    <img src="~/Images/distribuicao.ico" />
+                    Compras</p>
+            </li>
+        </ul>
+        <p class="site-content">
+            Usuário: @User.Identity.Name!
+        </p>
+        <a href="/Concillius/Account/LogOff">Sair</a>
+    </p>
+}
+else
+{
+    <ul>
+        <li>
+            <p class="site-title">
+                <img src="~/Images/distribuicao.ico" />
+                Compras</p>
+        </li>
+    </ul>
+    <a href="/Concillius/Account/LogOff">Sair</a> 
+}
